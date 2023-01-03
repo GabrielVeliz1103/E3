@@ -1,3 +1,26 @@
+:root{
+    --color1: #6c63ff;
+    --color2: #e6e6e6;
+    --color3: #2f2e41;
+    --color4: #ff6584;
+
+
+    --pl1:#e0fbfc;
+    --pl2:#c2dfe3;
+    --pl3:#9db4c0;
+    --pl4:#5c6b73;
+    --pl5:#253237;
+
+
+    --cc1:#004737;
+    --cc2:#004b3e;
+    --cc3:#004f46;
+    --cc4:#fffefe;
+    --cc5:#9c6b4b;
+    
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,12 +29,13 @@
 }
 
 body{
-    background-color: #eeeeee;
+    background-color: var(--cc4);
 }
 
+/*barra de navegacion*/
+
 header{
-    background-color: #ffffff;
-    border: 1px solid #e4e5e5;
+    background-color: var(--color2);
 }
 
 .navegacion{
@@ -21,6 +45,7 @@ header{
 }
 
 .logo img{
+    margin: 10px 0px 10px 40px;
     width: 80px;
     height: 80px;
 }
@@ -38,3 +63,72 @@ nav ul li a{
     text-decoration: none;
     font-size: 22px;
 }
+
+main{
+    background-color: var(--cc4);
+}
+
+/*hero section*/
+
+#hero{
+    background-color: var(--cc4);
+    display:flex;
+    justify-content: space-around;
+    padding: 40px 70px;
+    margin: 65px 200px 0;
+}
+
+#hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+
+#hero-info h3{
+    font-size: 60px;
+}
+
+#hero-info p{
+    font-size: 23px;
+}
+
+.boton1{
+    color: var(--cc4);
+    background-color: var(--color1) ;
+    width: 160px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#hero-pic{
+    width: 50%;
+}
+
+.img-title img{
+    width: 700px;
+}
+
+/*info*/
+
+#info{
+    display: flex;
+    justify-content: center;
+}
+
+#info div{
+    width: 700px;
+    background-color: var(--color2);
+    padding: 10px;
+    border-radius: 100px;
+    margin-top: 120px;
+}
+
+#info div p{
+    font-size: 30px;
+    text-align: center;
+}
+
